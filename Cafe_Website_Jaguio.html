@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe_Website_Jaguio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<style>
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  width: 100%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 300px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+}
+
+.btn-primary:hover {
+  background: #117964;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.showcase-area {
+  height: 50vh;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)
+    ),
+    url("https://i.pinimg.com/originals/1a/b3/34/1ab334d7b25393709eb0c20575da93a1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 110%;
+  font-size: 1.6rem;
+}
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    margin-top:0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px 5px rgba(0,0,0,0.20), -5px -5px 30px 5px rgba(0,0,0,0.20);
+    transition: 0.3s;
+}
+
+.card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
+}
+
+.card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: "hanson";
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: -260px;
+    height: 40px;
+    color: rgb(43, 40, 54);
+}
+
+.card:hover {
+    transform: scale(0.9, 0.9);
+}
+
+@media all and (max-width: 500px) {
+    .card-list {
+        flex-direction: column;
+    }
+}
+
+
+</style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="./Cafe_Website_Jaguio.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./Category.html">Category</a></li>
+                <li><a href="./Menu.html">Menu</a></li>
+                <li><a href="./Testimonials.html">Reviews</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+            <h1 class="logo">Aeong Crunch</h1>
+        </div>
+    </nav>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">Aeong Crunch: The Cat Cafe</h1>
+            <p>Full of crunch, Full of aeong</p>
+            <a href="./Menu.html" class="btn btn-primary">Have a tasty treat!</a>
+        </div>
+    </section>
+        
+        <div class="cards-list">
+            <div class="card 1">
+                <div class="card_image">
+                    <img src="https://i.pinimg.com/564x/46/e2/4b/46e24be5eb3e9859fa10980a9bcedb19.jpg" alt="photo1">
+                </div>
+                <div class="card_title">
+                    <span style="background-color: #fff1cbbd">
+                    <a href="./About.html"><b style="color:black">C</b></a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="card 2">
+                <div class="card_image">
+                    <img src="https://i.pinimg.com/564x/52/20/8c/52208c2a57df803ad41988df536bece3.jpg" alt="photo2">
+                </div>
+                <div class="card_title">
+                    <span style="background-color: #fff1cbbd">
+                        <a href="./Category.html"><b style="color:black">A</b></a>
+                    </span>
+                </div>
+            </div>
+            
+            
+            <div class="card 3">
+                <div class="card_image">
+                    <img src="https://i.pinimg.com/564x/d7/e0/ab/d7e0ab4c29af3be26d01bf5ecf36d0d1.jpg" alt="photo3">
+                </div>
+                <div class="card_title">
+                    <span style="background-color: #fff1cbbd">
+                        <a href="./Menu.html"><b style="color:black">F</b></a>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="card 4">
+                <div class="card_image">
+                    <img src="https://i.pinimg.com/564x/5e/b4/69/5eb469c07db7cdb5ae2f4ab0e90bc6c5.jpg" alt="photo4">
+                </div>
+                <div class="card_title">
+                    <span style="background-color: #fff1cbbd">
+                        <a href="./Contact.html"><b style="color:black">E</b></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        </body>
+</html>  
