@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+     
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  width: 100%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 300px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+}
+
+.btn-primary:hover {
+  background: #117964;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+body {
+  background-image: url('https://i.pinimg.com/564x/55/fc/12/55fc121f1efbaa0b88afc174aefd5a17.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.food-menu-heading {
+  text-align: center;
+  font-size: 3.4rem;
+  padding-top: 5%;
+  font-weight: 400;
+  color: #666;
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+
+.food-menu-container img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.food-menu-item {
+  display: flex;
+  flex: 1 1 600px;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.food-description {
+  margin: auto 1.5rem;
+}
+
+.font-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #444;
+}
+
+.food-description p {
+  font-size: 1.4rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.food-description .food-price {
+  color: #117964;
+  font-weight: 700;
+}
+    </style>
+
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="./Cafe_Website_Jaguio.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./Category.html">Category</a></li>
+                <li><a href="./Menu.html">Menu</a></li>
+                <li><a href="./Testimonials.html">Reviews</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+            <h1 class="logo">Aeong Crunch</h1>
+        </div>
+    </nav>
+
+<section id="food-menu">
+    <h2 class="food-menu-heading">Food Menu</h2>
+    <div class="food-menu-container container">
+        <div class="food-menu-item">
+            <div class="food-img">
+                <img src="https://i.pinimg.com/564x/7e/cf/13/7ecf13627239105a429bb582f57e1cf7.jpg" alt="food image">
+            </div>
+            <div class="food-description">
+                <h2 class="food-titile">[ Cap-purr-ccino ]</h2>
+                <p>
+                    The best cup of smoothly brewed coffee topped with frothy and milky cream, together with
+                    a kitty cat sitting above!
+                </p>
+                <p class="food-price">Price: &#8369; 80</p>
+            </div>
+        </div>
+
+        <div class="food-menu-item">
+            <div class="food-img">
+                <img src="https://i.pinimg.com/564x/64/54/c3/6454c3b7451b05bc4abdfa69adda0e1c.jpg" alt="food image">
+            </div>
+            <div class="food-description">
+                <h2 class="food-titile">[ Meow-tcha Tea ]</h2>
+                <p>
+                    Smooth and creamy matcha sweetened just right and served with steamed milk, along with cat art on top!
+                </p>
+                <p class="food-price">Price: &#8369; 80</p>
+            </div>
+        </div>
+        <div class="food-menu-item">
+            <div class="food-img">
+                <img src="https://i.pinimg.com/564x/b9/4b/cf/b94bcf5bf5fd93de60401ca7cf0e2da6.jpg" alt="food image">
+            </div>
+            <div class="food-description">
+                <h2 class="food-titile">[ Meow-carons ]</h2>
+                <p>
+                    These macarons with bite-sized nature, bright colors, and tempting textures make them hard to resist, not to mention the paw prints!
+                </p>
+                <p class="food-price">Price: &#8369; 100</p>
+            </div>
+        </div>
+        <div class="food-menu-item">
+            <div class="food-img">
+                <img src="https://i.pinimg.com/564x/b8/06/8f/b8068fa0b991751ee8264caf324411cf.jpg" alt="food image">
+            </div>
+            <div class="food-description">
+                <h2 class="food-titile">[ Doughcats ]</h2>
+                <p>
+                    These doughnuts are as soft and as sweet as cats, they also comes in various colors and flavors!
+                </p>
+                <p class="food-price">Price: &#8369; 130</p>
+            </div>
+        </div>
+        <div class="food-menu-item">
+            <div class="food-img">
+                <img src="https://i.pinimg.com/564x/b0/5f/92/b05f9204df5f5b3ad2f656d81b7b8f09.jpg" alt="food image">
+            </div>
+            <div class="food-description">
+                <h2 class="food-titile">[ Kit-Cat ]</h2>
+                <p>
+                    Eating these bars of lucious chocolate that also comes in different flavors while you play with cats?
+                    Nothing sure is sweeter than this!
+                </p>
+                <p class="food-price">Price: &#8369; 70</p>
+            </div>
+        </div>
+        <div class="food-menu-item">
+            <div class="food-img">
+                <img src="https://i.pinimg.com/564x/ca/48/7f/ca487f77d297c43f9c4b6c7c85777612.jpg" alt="food image">
+            </div>
+            <div class="food-description">
+                <h2 class="food-titile">[ Ice Cream Meowich ]</h2>
+                <p>
+                    No one can deny the delight that this purrfect ice cream sandwich and a cat can bring you!
+                </p>
+                <p class="food-price">Price: &#8369; 110</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</html>
